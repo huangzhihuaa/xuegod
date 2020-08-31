@@ -2,8 +2,8 @@
 - name: test yml
   hosts: all
   tasks:
-      - name: yum install Apache
+      - name: yum install vsftpd
         yum:
-            name: httpd
+            name: vsftpd
             state: installed
 ...
