@@ -3,7 +3,7 @@
   hosts: all
   tasks:
       - name: yum install vsftpd
-        user:
-            name: user001
-            state: present
+        yum:
+            name: vsftpd
+            state: installed
 ...
