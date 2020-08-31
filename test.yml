@@ -1,0 +1,9 @@
+---
+- name: test yml
+  hosts: all
+  tasks:
+      - name: yum install Apache
+        yum:
+            name: httpd
+            state: installed
+...
